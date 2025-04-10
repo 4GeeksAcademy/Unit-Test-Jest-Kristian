@@ -1,3 +1,7 @@
+const sum = (a,b) => {
+    return a + b
+}
+
 let oneEuroIs = {
     "JPY": 161.16,
     "USD": 1.10,
@@ -9,4 +13,9 @@ function fromEuroToDollar(value) {
     return dollar;
 };
 
-module.exports = { fromEuroToDollar };
+function fromDollarToYen(value){
+    let yen = (value / oneEuroIs.USD) * oneEuroIs.JPY; 
+    return yen;
+}
+
+module.exports = { sum, fromEuroToDollar, fromDollarToYen };
