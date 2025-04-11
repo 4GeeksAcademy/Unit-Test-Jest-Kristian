@@ -16,11 +16,11 @@ function fromEuroToDollar(value) {
 function fromDollarToYen(value){
     let yen = (value / oneEuroIs.USD) * oneEuroIs.JPY; 
     return yen;
-}
+};
 
 function fromYenToPound(value){
     let pound = (value / oneEuroIs.JPY) * oneEuroIs.GBP;
     return pound;
-}
+};
 
 module.exports = { sum, fromEuroToDollar, fromDollarToYen, fromYenToPound };
