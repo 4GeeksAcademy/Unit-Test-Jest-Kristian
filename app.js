@@ -18,4 +18,9 @@ function fromDollarToYen(value){
     return yen;
 }
 
-module.exports = { sum, fromEuroToDollar, fromDollarToYen };
+function fromYenToPound(value){
+    let pound = (value / oneEuroIs.JPY) * oneEuroIs.GBP;
+    return pound;
+}
+
+module.exports = { sum, fromEuroToDollar, fromDollarToYen, fromYenToPound };
